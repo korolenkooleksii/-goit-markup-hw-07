@@ -68,7 +68,7 @@
     <main>
       <!-- Секція герой -->
       <section class="hero centering">
-        <div class="container hero__container">
+        <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button data-modal-open class="button hero__button" type="button">
             Замовити послугу
@@ -76,11 +76,11 @@
         </div>
       </section>
 
-      <!-- Секція особливості - приховати h2-->
+      <!-- Секція FEATURE - особливості - приховати h2-->
 
-      <section class="section feature-section">
-        <h2 class="section__title visually-hidden">Особливості</h2>
-        <div class="section__container feature__container">
+      <section class="section section-feature">
+        <h2 class="visually-hidden">Особливості</h2>
+        <div class="container">
           <ul class="feature-list">
             <li class="feature-list__item">
               <div class="feature-list__thumb">
@@ -132,13 +132,13 @@
           </ul>
         </div>
       </section>
-      <!-- Секція Чим ми займаємося -->
+      <!-- Секція app - Чим ми займаємося -->
       <section class="section centering">
-        <div class="section__container">
-          <h2 class="section__title app-title">Чим ми займаємося</h2>
+        <div class="container">
+          <h2 class="container__title container__title--bottom">Чим ми займаємося</h2>
           <ul class="app-list">
             <li class="app-list__item">
-              <div class="app-list__thumb">
+              <div class="app-list__product">
                 <img
                   src="./images/img1.jpg"
                   alt="людина працює на клавіатурі"
@@ -148,7 +148,7 @@
               </div>
             </li>
             <li class="app-list__item">
-              <div class="app-list__thumb">
+              <div class="app-list__product">
                 <img
                   src="./images/img2.jpg"
                   alt="людина переглядає телефон"
@@ -158,7 +158,7 @@
               </div>
             </li>
             <li class="app-list__item">
-              <div class="app-list__thumb">
+              <div class="app-list__product">
                 <img
                   src="./images/img3.jpg"
                   alt="людина переглядає планшет"
@@ -172,9 +172,9 @@
       </section>
 
       <!-- Секція наша команда -->
-      <section class="section team-section centering">
-        <div class="section__container">
-          <h2 class="section__title team-title">Наша команда</h2>
+      <section class="section section-team centering">
+        <div class="container">
+          <h2 class="container__title container__title--bottom">Наша команда</h2>
           <ul class="employees-list">
             <li class="employees-list__item">
               <img src="./images/imgigor.jpg" alt="фото Ігоря" width="270" />
@@ -414,8 +414,8 @@
 
       <!-- секція наші кліенти -->
       <section class="section">
-        <div class="section__container">
-          <h2 class="section__title clients-title centering">Постійні клієнти</h2>
+        <div class="container">
+          <h2 class="container__title container__title--bottom centering">Постійні клієнти</h2>
           <ul class="clients-list">
             <li class="clients-list__item">
               <a
@@ -652,7 +652,7 @@
             </label>
           </div>
 
-          <button class="button send-button" type="submit">Відправити</button>
+          <button class="button form__button" type="submit">Відправити</button>
         </form>
       </div>
     </div>

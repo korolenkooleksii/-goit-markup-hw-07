@@ -64,7 +64,7 @@ body {
   text-align: center;
 }
 
-/* ------------геометрия section and container and title------------ */
+/* ------------геометрия section and container and title and button------------ */
 
 
 .section {
@@ -74,18 +74,38 @@ body {
   padding-bottom: 94px;
 }
 
-.container,
-.section__container {
+.container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 
-.section__title {
+.container__title {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+}
+
+.container__title--bottom {
+  margin-bottom: 50px;
+}
+
+.button {
+  padding: 0;
+  border-radius: 4px;
+  height: 50px;
+  min-width: 200px;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: var(--primary-white-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em; 
+  border: none;
+  cursor: pointer; 
 }
 
 /* -----HEADER------- */
@@ -216,22 +236,6 @@ body {
   text-transform: uppercase;
 }
 
-.button {
-  padding: 0;
-  border-radius: 4px;
-  height: 50px;
-  min-width: 200px;
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  color: var(--primary-white-color);
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;  
-}
 
 .hero__button {
   display: inline-block;
@@ -260,7 +264,7 @@ body {
   overflow: hidden;
 }
 
-.feature-section {
+.section-feature {
   padding-bottom: 0;
 }
 
@@ -300,12 +304,7 @@ body {
   color: var(--secondary-text-color);
 }
 
-/* -------------- WORK ---------------- */
-
-.app-title {
-  margin-bottom: 50px;
-}
-
+/* -------------- APP ---------------- */
 
 .app-list {
   display: flex;
@@ -317,11 +316,11 @@ body {
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.app-list__thumb {
+.app-list__product {
   position: relative;
 }
 
-.app-list__thumb::before {
+.app-list__product::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -346,12 +345,8 @@ body {
 
 /* ---------- TEAM ------------ */
 
-.team-section {
+.section-team {
   background-color: var(--primary-bgr-color);
-}
-
-.team-title {
-  margin-bottom: 50px;
 }
 
 .employees-list {
@@ -427,10 +422,6 @@ body {
 
 /* ------------ CLIENTS ----------------*/
 
-.clients-title {
- margin-bottom: 50px;
-}
-
 .clients-list {
   display: flex;
   justify-content: center;
@@ -504,40 +495,40 @@ body {
 
 /* ------------- PORTFOLIO ------------ */
 
-.portfolio-list {
+.portfolio-set {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.portfolio-list__item {
+.portfolio-set__item {
   flex-basis: calc((100% - 60px) / 3);
   background: var(--primary-white-color);
 }
 
-.portfolio-list__link {
+.portfolio-set__link {
   display: block;
   width: 100%;
   height: 100%;
   transition: box-shadow var(--timing-function);
 }
 
-.portfolio-list__link:hover,
-.portfolio-list__link:focus {
+.portfolio-set__link:hover,
+.portfolio-set__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-list__thumb {
+.portfolio-set__product {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-list__link:hover .portfolio-list__overlay-text {
+.portfolio-set__link:hover .portfolio-set__overlay {
   transform: translateY(0);
 }
 
-.portfolio-list__overlay-text {
+.portfolio-set__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -553,13 +544,13 @@ body {
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-.portfolio-list__wpar {
+.portfolio-set__card {
   padding: 20px 24px;
   border: 1px solid var(--secondare-brd-colod);
   border-top: 1px solid transparent;
 }
 
-.portfolio-list__title {
+.portfolio-set__name {
   margin-top: 0;
   margin-bottom: 4px;
   font-size: 18px;
@@ -568,7 +559,7 @@ body {
   color: var(--primary-text-color);
 }
 
-.portfolio-list__text {
+.portfolio-set__type {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -888,14 +879,14 @@ body {
   text-decoration: underline;
 }
 
-.send-button {  
+.form__button {  
   display: block;
   margin: 0 auto;
   transition: background-color var(--timing-function);
 }
 
-.send-button:hover,
-.send-button:focus {
+.form__button:hover,
+.form__button:focus {
   background-color: var(--accent-hero-btn);
 }
 
