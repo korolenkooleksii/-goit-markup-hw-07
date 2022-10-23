@@ -13,9 +13,9 @@
 }
 
 .feature-list__thumb {
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
   height: 120px;
   width: 100%;
   margin-bottom: 30px;
