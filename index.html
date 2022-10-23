@@ -19,17 +19,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
       <!-- Верхня лінія -->
       <div class="container header__container">
-        <nav class="header__navigation">
+        <nav class="header__nav-wrap">
           <a class="logo" href="./index.html" lang="en"
             >Web<span class="header__logo">Studio</span></a
           >
-          <ul class="navigation__list">
+          <ul class="navigation">
             <li class="navigation__item">
               <a
                 class="navigation__link navigation__link--current"
@@ -78,7 +78,7 @@
 
       <!-- Секція FEATURE - особливості - приховати h2-->
 
-      <section class="section section-feature">
+      <section class="section feature">
         <h2 class="visually-hidden">Особливості</h2>
         <div class="container">
           <ul class="feature-list">
@@ -135,7 +135,7 @@
       <!-- Секція app - Чим ми займаємося -->
       <section class="section centering">
         <div class="container">
-          <h2 class="container__title container__title--bottom">Чим ми займаємося</h2>
+          <h2 class="section__heading section__heading--bottom">Чим ми займаємося</h2>
           <ul class="app-list">
             <li class="app-list__item">
               <div class="app-list__product">
@@ -172,9 +172,9 @@
       </section>
 
       <!-- Секція наша команда -->
-      <section class="section section-team centering">
+      <section class="section team centering">
         <div class="container">
-          <h2 class="container__title container__title--bottom">Наша команда</h2>
+          <h2 class="section__heading section__heading--bottom">Наша команда</h2>
           <ul class="employees-list">
             <li class="employees-list__item">
               <img src="./images/imgigor.jpg" alt="фото Ігоря" width="270" />
@@ -415,7 +415,7 @@
       <!-- секція наші кліенти -->
       <section class="section">
         <div class="container">
-          <h2 class="container__title container__title--bottom centering">Постійні клієнти</h2>
+          <h2 class="section__heading section__heading--bottom centering">Постійні клієнти</h2>
           <ul class="clients-list">
             <li class="clients-list__item">
               <a
@@ -489,8 +489,8 @@
     </main>
     <!-- Секція підвал -->
     <footer class="footer">
-      <div class="container footer__wrap">
-        <div class="footer__address">
+      <div class="container footer__container">
+        <div class="footer__wrap">
           <a class="logo" href="./index.html" lang="en"
             >Web<span class="footer__logo">Studio</span></a
           >
@@ -588,17 +588,17 @@
     <!-- Модальное окно и форма -->
 
     <div class="backdrop is-hidden" data-modal>
-      <div class="backdrop__modal">
-        <button class="backdrop__button button-close" data-modal-close>
+      <div class="modal">
+        <button class="modal__button button-close" data-modal-close>
           <svg class="button-close__icon" width="18" height="18">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
-        <h2 class="backdrop__title">Залиште свої дані, ми вам передзвонимо</h2>
+        <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
 
         <form class="form" name="request">
           <div class="form__field">
-            <label for="name" class="form__label">Ім'я</label>
+            <label for="name" class="form__text">Ім'я</label>
             <input type="text" class="form__input" name="user-name" id="name" />
             <svg class="form__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-person"></use>
@@ -606,7 +606,7 @@
           </div>
 
           <div class="form__field">
-            <label for="phone" class="form__label">Телефон</label>
+            <label for="phone" class="form__text">Телефон</label>
             <input
               type="tel"
               class="form__input"
@@ -619,15 +619,15 @@
           </div>
 
           <div class="form__field">
-            <label for="mail" class="form__label">Пошта</label>
+            <label for="mail" class="form__text">Пошта</label>
             <input type="email" class="form__input" name="mail" id="mail" />
             <svg class="form__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </div>
 
-          <div class="form__textarea">
-            <label for="comment" class="form__label">Коментар</label>
+          <div class="form__field">
+            <label for="comment"><span class="form__text">Коментар</span></label>
             <textarea
               name="comment"
               class="form__comment"
@@ -647,7 +647,7 @@
               />
               <svg class="checkbox__icon" width="16" height="15">
                 <use href="./images/icons.svg#icon-box"></use></svg
-              >Погоджуюся з розсилкою та приймаю
+              ><span class="checkbox__text">Погоджуюся з розсилкою та приймаю</span>
               <a href="#" class="checkbox__link">Умови договору</a>
             </label>
           </div>

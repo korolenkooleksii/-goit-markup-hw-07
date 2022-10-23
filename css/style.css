@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
@@ -19,7 +19,7 @@
 
 /* ----сбрасываем margin and other-------- */
 
-p,
+/* p,
 h1,
 h2,
 h3,
@@ -45,52 +45,49 @@ img {
 a {
   text-decoration: none;
   color: currentColor;
-}
-
-/* цвет и фон страницы */
+} */
+/* 
+цвет и фон страницы
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
-}
+} */
+*/
 
 
-.navigation__link--current {
-  position: relative;
-  color: var(--accent-color);
-}
 
-.centering {
+/* .centering {
   text-align: center;
-}
+} */
 
 /* ------------геометрия section and container and title and button------------ */
 
 
-.section {
+/* .section {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 94px;
   padding-bottom: 94px;
-}
+} */
 
-.container {
+/* .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 
-.container__title {
+.section__heading {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
 
-.container__title--bottom {
+.section__heading--bottom {
   margin-bottom: 50px;
-}
-
+} */
+/* 
 .button {
   padding: 0;
   border-radius: 4px;
@@ -106,11 +103,11 @@ body {
   letter-spacing: 0.06em; 
   border: none;
   cursor: pointer; 
-}
+} */
 
 /* -----HEADER------- */
 
-.header {
+/* .header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -121,9 +118,9 @@ body {
 .header__navigation {
   display: flex;
   align-items: center;
-}
+} */
 
-.logo {
+/* .logo {
   padding-top: 24px;
   padding-bottom: 24px;
   color: var(--logo-primary-color);
@@ -137,9 +134,9 @@ body {
 
 .header__logo {
   color: var(--logo-top-color);
-}
+} */
 
-.navigation__list {
+/* .navigation__list {
   display: flex;
   align-items: center;
   margin-left: 93px;
@@ -158,11 +155,16 @@ body {
   transition: color var(--timing-function);
 }
 
-.navigation__link:hover,
-.navigation__link:focus {
+.navigation__link--current {
+  position: relative;
   color: var(--accent-color);
 }
 
+.navigation__link:hover,
+.navigation__link:focus {
+  color: var(--accent-color);
+} */
+/* 
 .navigation__link--current::after {
   position: absolute;
   content: "";
@@ -180,8 +182,8 @@ body {
   align-items: center;
   margin-left: auto;
   gap: 50px;
-}
-
+} */
+/* 
 .contacts__link {
   display: flex;
   justify-content: center;
@@ -204,10 +206,10 @@ body {
 .contacts__link:hover,
 .contacts__link:focus {
   color: var(--accent-color);
-}
+} */
 
 /* ------- HERO ------- */
-
+/* 
 .hero {
   margin: 0 auto;
   padding-top: 200px;
@@ -247,11 +249,11 @@ body {
 .hero__button:hover,
 .hero__button:focus {
   background-color: var(--accent-hero-btn);
-}
+} */
 
 /* ------- FEATURE ------- */
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -262,8 +264,8 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
+} */
+/* 
 .section-feature {
   padding-bottom: 0;
 }
@@ -302,10 +304,10 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-}
+} */
 
 /* -------------- APP ---------------- */
-
+/* 
 .app-list {
   display: flex;
   justify-content: center;
@@ -328,8 +330,8 @@ body {
   left: 0;
   bottom: 0;
   background: rgba(47, 48, 58, 0.8);
-}
-
+} */
+/* 
 .app-list__text {
   position: absolute;
   left: 50%;
@@ -341,10 +343,10 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
-}
+} */
 
 /* ---------- TEAM ------------ */
-
+/* 
 .section-team {
   background-color: var(--primary-bgr-color);
 }
@@ -402,8 +404,8 @@ body {
   justify-content: center;
   align-items: center;
 }
-  
-  .employees-list__link {
+
+.employees-list__link {
   background-color: transparent;
   color: var(--primary-brd-color);
   transition: background-color var(--timing-function),
@@ -418,10 +420,10 @@ body {
 .social-list__link:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
-}
+} */
 
 /* ------------ CLIENTS ----------------*/
-
+/* 
 .clients-list {
   display: flex;
   justify-content: center;
@@ -454,10 +456,10 @@ body {
 .clients-list__link:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
-}
+} */
 
 /* ------------- FILTERS ------------ */
-
+/* 
 .filters-list {
   display: flex;
   justify-content: center;
@@ -491,10 +493,10 @@ body {
   color: var(--primary-white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+} */
 
 /* ------------- PORTFOLIO ------------ */
-
+/* 
 .portfolio-set {
   display: flex;
   flex-wrap: wrap;
@@ -564,7 +566,7 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-}
+} */
 
 /* ---------- FOOTER ----------- */
 
@@ -583,9 +585,9 @@ body {
   margin-top: 20px;
 }
 
-.footer__logo {
+/* .footer__logo {
   color: var(--logo-bottom-color);
-}
+} */
 
 .address {
   margin-top: 20px;
@@ -631,7 +633,7 @@ body {
   margin-bottom: 20px;
 }
 
-.footer__social-link { 
+.footer__social-link {
   background-color: var(--footer-bgr-social-link-color);
   color: var(--primary-white-color);
   transition: background-color var(--timing-function);
@@ -690,11 +692,11 @@ body {
   pointer-events: none;
 }
 
-.backdrop.is-hidden .backdrop__modal {
+.backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.2);
 }
 
-.backdrop__modal {
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -709,7 +711,7 @@ body {
   padding: 40px;
 }
 
-.button-close {  
+.button-close {
   width: 30px;
   height: 30px;
   display: flex;
@@ -719,10 +721,9 @@ body {
   background-color: var(--primary-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  
 }
 
-.backdrop__button {
+.modal__button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -732,12 +733,12 @@ body {
   fill: currentColor;
 }
 
-.backdrop__button:hover .button-close__icon,
-.backdrop__button:focus .button-close__icon {
+.modal__button:hover .button-close__icon,
+.modal__button:focus .button-close__icon {
   color: var(--accent-color);
 }
 
-.backdrop__title {
+.modal__title {
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
@@ -755,6 +756,15 @@ body {
   margin-bottom: 10px;
 }
 
+.form__text {
+  margin-bottom: 4px;
+  display: block;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color);
+}
+
 .form__input {
   padding: 12px 12px 12px 32px;
   margin: 0;
@@ -762,16 +772,8 @@ body {
   border-radius: 4px;
   color: var(--primary-text-color);
   transition: border var(--timing-function);
-  outline: none;
+  outline: transparent;
   cursor: pointer;
-}
-
-.form__label {
-  margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: var(--secondary-text-color);
 }
 
 .form__icon {
@@ -791,12 +793,6 @@ body {
   border: 1px solid var(--accent-color);
 }
 
-.form__textarea {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
 .form__comment {
   resize: none;
   margin: 0;
@@ -809,7 +805,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.01em;
   transition: border var(--timing-function);
-  outline: none;
+  outline: transparent;
   cursor: pointer;
 }
 
@@ -823,7 +819,7 @@ body {
 
 .checkbox {
   position: relative;
-  margin: 0 auto 30px auto;
+  margin: 20px auto 30px auto;
   display: flex;
   align-items: center;
 }
@@ -854,19 +850,11 @@ body {
   background-origin: border-box;
 }
 
-.checkbox__input:hover + .checkbox__icon {
-  fill: var(--accent-color);
-  background-color: var(--accent-color);
-  background-image: url(../images/icon-check.svg);
-  background-size: contain;
-  background-origin: border-box;
-}
-
 .checkbox__input:focus + .checkbox__icon {
   fill: var(--accent-color);
 }
 
-.checkbox__label {
+.checkbox__text {
   padding-left: 25px;
   font-size: 14px;
   line-height: 1.71;
@@ -879,7 +867,7 @@ body {
   text-decoration: underline;
 }
 
-.form__button {  
+.form__button {
   display: block;
   margin: 0 auto;
   transition: background-color var(--timing-function);
@@ -889,4 +877,3 @@ body {
 .form__button:focus {
   background-color: var(--accent-hero-btn);
 }
-
