@@ -328,7 +328,6 @@ body {
   border-width: 1px;
   border-style: solid;
   border-color: #2196f3;
-  border-radius: 4px;
 }
 
 .form__icon {
@@ -361,7 +360,9 @@ body {
   cursor: pointer;
 }
 .form__comment:focus {
-  border: 1px solid #2196f3;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #2196f3;
 }
 .form__comment::-moz-placeholder {
   color: rgba(117, 117, 117, 0.5);
