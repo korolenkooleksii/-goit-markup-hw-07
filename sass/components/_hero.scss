@@ -1,5 +1,5 @@
 $hero-bgr-color: #c4c4c4;
-$accent-hero-btn: #188ce8;
+$hero-btn-accent: #188ce8;
 
 .hero {
   margin: 0 auto;
@@ -35,6 +35,6 @@ $accent-hero-btn: #188ce8;
   transition: background-color $timing-function;
   &:hover,
   &:focus {
-    background-color: $accent-hero-btn;
+    background-color: $hero-btn-accent;
   }
 }

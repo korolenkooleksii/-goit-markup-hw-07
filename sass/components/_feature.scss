@@ -13,9 +13,7 @@
 }
 
 .feature-list__thumb {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flexcenter;
   height: 120px;
   width: 100%;
   margin-bottom: 30px;

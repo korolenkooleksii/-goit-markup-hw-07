@@ -1,7 +1,5 @@
-$footer-bgr-item-color: rgba(255, 255, 255, 0.6);
 $footer-bgr-social-link-color: rgba(255, 255, 255, 0.1);
-$subscribe-text-color: rgba(255, 255, 255, 0.6);
-$subscribe-border-color: rgba(255, 255, 255, 0.3);
+
 
 .footer {
   padding-top: 60px;
@@ -22,6 +20,10 @@ $subscribe-border-color: rgba(255, 255, 255, 0.3);
   margin-left: 70px;
 }
 
+.footer__wrap-subscribe {
+  margin-left: auto;
+}
+
 .footer__title {
   font-weight: 700;
   font-size: 14px;
@@ -36,8 +38,4 @@ $subscribe-border-color: rgba(255, 255, 255, 0.3);
   background-color: $footer-bgr-social-link-color;
   color: $primary-white-color;
   transition: background-color $timing-function;
-}
-
-.footer__wrap-subscribe {
-  margin-left: auto;
 }

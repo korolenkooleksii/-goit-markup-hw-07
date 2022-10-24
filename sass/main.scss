@@ -1,6 +1,7 @@
 @import "./base/reset";
 @import "./utils/variables";
 @import './utils/visually-hidden';
+@import "./utils/placeholder";
 @import "./components/body";
 @import "./components/container";
 @import "./components/logo";
@@ -8,8 +9,14 @@
 @import './components/navigation';
 @import "./components/contacts";
 @import "./components/section";
+@import './components/centering';
 @import "./components/button";
 @import "./components/hero";
+@import "./components/backdrop";
+@import './components/modal';
+@import './components/form';
+@import './components/checkbox';
+@import "./utils/mixins";
 @import "./components/app";
 @import "./components/feature";
 @import './components/social-list';

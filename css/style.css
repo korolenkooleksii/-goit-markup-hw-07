@@ -569,7 +569,7 @@ body {
 } */
 
 /* ---------- FOOTER ----------- */
-
+/* 
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -589,7 +589,7 @@ body {
   color: var(--logo-bottom-color);
 } */
 
-.address {
+/* .address {
   margin-top: 20px;
 }
 
@@ -672,11 +672,11 @@ body {
 
 .subscribe__icon {
   fill: currentColor;
-}
+} */ */
 
 /* ----------------- Бэкдроп и модальное окно ----------------- и */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   width: 100%;
@@ -690,8 +690,8 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-}
-
+} */
+/* 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.2);
 }
@@ -745,7 +745,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   margin-bottom: 12px;
-}
+} */
 
 /* ---------------- ФОРМА -------------------- */
 

@@ -1,8 +1,11 @@
+$subscribe-text-color: rgba(255, 255, 255, 0.6);
+$subscribe-border-color: rgba(255, 255, 255, 0.3);
+
 .subscribe {
-  margin-top: 20px;
   display: flex;
   align-items: center;
   gap: 12px;
+  margin-top: 20px;
 }
 
 .subscribe__input {
@@ -20,9 +23,7 @@
 }
 
 .subscribe__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flexcenter;
   gap: 10px;
 }
 
