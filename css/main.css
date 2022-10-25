@@ -43,7 +43,7 @@ img {
   overflow: hidden;
 }
 
-.subscribe__button, .clients-list__link, .social-list__link, .feature-list__thumb, .contacts__link {
+.subscribe__button, .clients-list__link, .social-list__link, .feature-list__thumb, .button-close, .contacts__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -265,9 +265,6 @@ body {
 .button-close {
   width: 30px;
   height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 50%;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
